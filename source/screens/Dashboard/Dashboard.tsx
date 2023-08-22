@@ -11,9 +11,13 @@ import {
   View,
 } from "react-native";
 import { styles } from "./Dashboardstyles";
-import { responsiveHeight, responsiveWidth } from "../../styles/variables";
+import { colors, fontFamily, responsiveHeight, responsiveWidth } from "../../styles/variables";
 
 const Dashboard = ({ navigation }: any) => {
+  const [click, setClick] = useState(false);
+  const Click = () => {
+    setClick(true);
+  };
   const renderItems = ({ item, index }: any) => {
     return (
       <View
@@ -63,6 +67,7 @@ const Dashboard = ({ navigation }: any) => {
               Lorem Ipsum is simply dummy text.
             </Text>
             <TouchableOpacity
+              onPress={() => navigation.navigate("Donation")}
               style={{
                 height: 28,
                 borderRadius: 20,
@@ -84,23 +89,45 @@ const Dashboard = ({ navigation }: any) => {
   };
 
   const renderItemsNGO = ({ item }: any) => {
-    console.log('Item:',item)
+    console.log("Item:", item);
     return (
-      <View
+      <TouchableOpacity
+        onPress={() => Click()}
         style={{
           marginStart: 15,
-          backgroundColor: "white",
-          elevation: 2,
-          height: 30,
+          backgroundColor: "#E0A14E50",
+          paddingHorizontal: 15,
+          borderColor: "black",
+          paddingVertical:5,
+          borderWidth: 0.2,
+          height:30,marginBottom:20,
           marginTop: 10,
-          width: responsiveWidth(25),
+          justifyContent: "center",
           borderRadius: 25,
         }}
       >
-        <Text style={{color:'black',fontSize:14}}>{item?.title}</Text>
-      </View>
+        <Text style={{ color: "black", fontSize: 14, alignSelf: "center" }}>
+          {item?.title}
+        </Text>
+      </TouchableOpacity>
     );
   };
+  const List=({item}:any)=>{
+    return(
+<View style={{borderWidth:0.5,borderColor:colors.black,width:responsiveWidth(87),alignSelf:'center',height:responsiveHeight(10),borderRadius:10,marginTop:10,flexDirection:'row',}}>
+  <Image style={{height:60,width:60,borderRadius:10,alignSelf:'center',left:10}} source={item.image}/>
+  <View style={{alignSelf:'center',left:20}}>
+
+    <Text style={{fontFamily:fontFamily.medium,fontSize:16,color:colors.black}}>{item.title}</Text>
+    <Text numberOfLines={2} style={{fontFamily:fontFamily.regular,fontSize:12,color:colors.forgotpassgray,width:responsiveWidth(50)}}>{item.desc}</Text>
+    <TouchableOpacity>
+    <Image style={{height:40,width:40,borderRadius:20,alignSelf:'center',position:'absolute',right:-20,bottom:5}} source={require('../../assets/images/heartimg.png')}/>
+    </TouchableOpacity>
+
+  </View>
+</View>
+    )
+  }
 
   return (
     <View style={styles.container}>
@@ -268,15 +295,33 @@ const Dashboard = ({ navigation }: any) => {
                 source={require("../../assets/images/Filter.png")}
               ></Image>
             </View>
-            <Text style={{alignSelf:"center",textAlign:"center",marginTop:20,fontSize:14}}>Exciting Developments Underway 🚀</Text>
+
             <View style={{ maxHeight: responsiveHeight(35) }}>
-              {/* <FlatList
-                data={[{ key: 1,title:"Pets" }, { key: 0,title:"Child Education" }, { key: 2,title:"Hunger" }]}
+              <FlatList
+                data={[
+                  { key: 1, title: "Pets" },
+                  { key: 0, title: "Child Education" },
+                  { key: 2, title: "Hunger" },
+                ]}
                 contentContainerStyle={{ width: "100%" }}
                 showsHorizontalScrollIndicator={false}
                 horizontal
                 renderItem={(item) => renderItemsNGO(item)}
-              /> */}
+              />
+               <FlatList
+                data={[
+                  { key: 0, title: "Animal Rescue League",desc:"Lorem Ipsum is simply dummy text of the printing",image:require('../../assets/images/dog1.png') },
+                  { key: 1, title: "Critter Care Coalition",desc:"Lorem Ipsum is simply dummy text of the printing" ,image:require('../../assets/images/dog2.png')},
+                  { key: 2, title: "Animal Rescue League",desc:"Lorem Ipsum is simply dummy text of the printing",image:require('../../assets/images/dog1.png') },
+                  { key: 3, title: "Critter Care Coalition",desc:"Lorem Ipsum is simply dummy text of the printing",image:require('../../assets/images/dog2.png') },
+                  { key: 4, title: "Animal Rescue League",desc:"Lorem Ipsum is simply dummy text of the printing",image:require('../../assets/images/dog1.png') },
+
+
+                ]}
+                contentContainerStyle={{ width: "100%",paddingBottom:80 }}
+                showsVerticalScrollIndicator={false}
+                renderItem={(item) => List(item)}
+              />
             </View>
           </View>
         </View>

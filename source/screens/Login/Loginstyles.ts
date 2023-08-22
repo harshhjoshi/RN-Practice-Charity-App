@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     fontSize: fontSize.normal,
     fontFamily: fontFamily.medium,
     textAlign: 'center',
-    color: colors.HARD_WHITE
+    color: colors.HARD_WHITE,alignSelf:'center'
   },
   logoEye: {
     right: 25

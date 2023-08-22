@@ -43,6 +43,8 @@ import Selection from './source/screens/Selection/Selection';
 import { FCM_TOKEN } from './source/utils/commonUtils';
 import ChatScreen from './source/screens/ChatScreen/ChatScreen';
 import { PersistGate } from 'redux-persist/integration/react';
+import Donation from './source/screens/Donation/Dontation';
+import Thankyou from './source/screens/Thnaku/ThankYou';
 
 const RootStack = createStackNavigator();
 
@@ -193,6 +195,11 @@ const App = () => {
       <RootStack.Screen name="Tabs" component={Tabs} />
       <RootStack.Screen name="DoctorDetail" component={DoctorDetails} />
       <RootStack.Screen name="BookAppointment" component={BookAppointment} />
+      <RootStack.Screen name="Donation" component={Donation} />
+      <RootStack.Screen name="Thankyou" component={Thankyou} />
+
+
+
       <RootStack.Screen
         name="PatientBookingDetails"
         component={PatientDetail}
@@ -225,6 +232,9 @@ const App = () => {
       <RootStack.Screen name="Tabs" component={Tabs} />
       <RootStack.Screen name="DoctorDetail" component={DoctorDetails} />
       <RootStack.Screen name="BookAppointment" component={BookAppointment} />
+      <RootStack.Screen name="Donation" component={Donation} />
+      <RootStack.Screen name="Thankyou" component={Thankyou} />
+
       <RootStack.Screen
         name="PatientBookingDetails"
         component={PatientDetail}
