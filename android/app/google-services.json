@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "830055568438",
+    "project_id": "proact-staff",
+    "storage_bucket": "proact-staff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830055568438:android:92106749113f7716fef497",
+        "android_client_info": {
+          "package_name": "com.proact.staff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830055568438-3jqmsqo520jugv2qh1r5vi2uebuu4diq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh8cihQu2IHjyqIpqW6JESyjVhsJ3j3o0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830055568438-3jqmsqo520jugv2qh1r5vi2uebuu4diq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

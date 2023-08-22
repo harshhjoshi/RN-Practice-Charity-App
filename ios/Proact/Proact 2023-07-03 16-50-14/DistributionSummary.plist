@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Proact.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>bitcode</key>
+			<false/>
+			<key>buildNumber</key>
+			<string>2</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>7BABF6AD793A927717CEE96FDAB04DA21998B852</string>
+				<key>dateExpires</key>
+				<string>26/03/24</string>
+				<key>type</key>
+				<string>Cloud Managed Apple Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>bitcode</key>
+					<false/>
+					<key>buildNumber</key>
+					<string>2</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>7BABF6AD793A927717CEE96FDAB04DA21998B852</string>
+						<key>dateExpires</key>
+						<string>26/03/24</string>
+						<key>type</key>
+						<string>Cloud Managed Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>hermes.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>3VK34F448G</string>
+						<key>name</key>
+						<string>Mihir Patel</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>1.2</string>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>3VK34F448G.com.arche.proact.patient</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>3VK34F448G</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>Proact.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>a7572b1c-c2b1-440f-a892-232baf6468d7</string>
+				<key>dateExpires</key>
+				<string>26/03/24</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: com.arche.proact.patient</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>3VK34F448G</string>
+				<key>name</key>
+				<string>Mihir Patel</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
