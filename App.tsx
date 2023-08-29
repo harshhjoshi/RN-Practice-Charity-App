@@ -212,17 +212,12 @@ const App = () => {
       <RootStack.Screen name="Createmeet" component={Createmeet} />
       <RootStack.Screen name="CallEnd" component={CallEnd} />
       <RootStack.Screen name="Review" component={Review} />
-      {/* <RootStack.Screen name="Faqs" component={Faqs} /> */}
-      {/* <RootStack.Screen name="Help" component={Help} /> */}
       <RootStack.Screen name="Notification" component={Notification} />
       <RootStack.Screen name="Dashboard" component={Dashboard} />
       <RootStack.Screen name="Doctor" component={Doctor} />
-      {/* <RootStack.Screen name="ProMember" component={ProMember} /> */}
-      {/* <RootStack.Screen name="FavDoctor" component={FavDoctor} /> */}
       <RootStack.Screen name="Profile" component={Profile} />
       <RootStack.Screen name="ProfileDetails" component={ProfileDetails} />
       <RootStack.Screen name="AddPhoto" component={AddPhoto} />
-      {/* <RootStack.Screen name="InviteFriend" component={InviteFriend} /> */}
       <RootStack.Screen name="Authentication" component={Authentication} />
     </RootStack.Navigator>
   );
